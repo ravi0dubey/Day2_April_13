@@ -23,3 +23,15 @@ a2 = 3
 b2 = 9
 c2 = a2+b2 # over here since values are assigned it treat them as numeric
 print("Value of c2: ", c2)
+
+
+# To have a full proof solution in case only single digit was entered
+two_digit_number = input("Type a two digit number: ")
+length = len(two_digit_number)
+print(length)
+a = two_digit_number[0]
+if(length < 2):
+ print("Only single digit entered:", a)
+else:
+  b = two_digit_number[1]
+  print("Sum of Entered 2 digits is ", int(a) + int(b))
